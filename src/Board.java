@@ -6,6 +6,9 @@ public class Board {
     public static int COLUMNS = 7;
     public Piece[][] pieces = new Piece[ROWS][COLUMNS];
 
+    /**
+     * Clear the board to start.
+     */
     public Board() {
         clearBoard();
     }
