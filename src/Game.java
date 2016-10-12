@@ -4,6 +4,8 @@
 
 
 public class Game {
+    public static int ROWS = 6;
+    public static int COLUMNS = 7;
     private Piece turn;
     private Board board;
     private Mode mode;

@@ -2,9 +2,8 @@
  * Created by Kyle on 10/10/2016.
  */
 public class Board {
-    public static int ROWS = 6;
-    public static int COLUMNS = 7;
-    public Piece[][] pieces = new Piece[ROWS][COLUMNS];
+
+    public Piece[][] pieces = new Piece[Game.ROWS][Game.COLUMNS];
 
     /**
      * Clear the board to start.
@@ -42,7 +41,7 @@ public class Board {
         if (pieces[0][column] != Piece.EMPTY)
             return -1;
         int row = 0;
-        while (row < ROWS && pieces[row + 1][column] != Piece.EMPTY)
+        while (row < Game.ROWS && pieces[row + 1][column] != Piece.EMPTY)
         {
             row++;
         }
